@@ -29,7 +29,7 @@ var getAngle = (degree) => degree * (Math.PI/180);
 var marbels = getMarbels(bodyWidth, engine);
 
 // set number of Laps
-var totalLaps = 3;
+var totalLaps = 1;
 
 var fastestLap = ['', 0, Infinity];
 var lapData = new Array(totalLaps);
@@ -93,9 +93,8 @@ Events.on(engine, 'collisionStart', function(event) {
 
 drawInitialTable(totalLaps);
 
-var raceStartTime = Date.now();
-
 // run the engine
+var raceStartTime = Date.now();
 marbels.forEach((marble) => marble.lapStart=raceStartTime);
 Engine.run(engine);
 
