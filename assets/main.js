@@ -93,10 +93,15 @@ Events.on(engine, 'collisionStart', function(event) {
 
 drawInitialTable(totalLaps);
 
-// run the engine
-var raceStartTime = Date.now();
-marbels.forEach((marble) => marble.lapStart=raceStartTime);
-Engine.run(engine);
+// run the engine on space bar press
+var raceStartTime;
+document.body.onkeyup = function(e){
+    if(e.keyCode == 32){
+        raceStartTime = Date.now();
+        marbels.forEach((marble) => marble.lapStart=raceStartTime);
+        Engine.run(engine);
+    }
+}
 
 // run the renderer
 Render.run(render);
