@@ -29,7 +29,7 @@ var getAngle = (degree) => degree * (Math.PI/180);
 var marbels = getMarbels(bodyWidth, engine);
 
 // set number of Laps
-var totalLaps = 1;
+var totalLaps = 5;
 
 var fastestLap = ['', 0, Infinity];
 var lapData = new Array(totalLaps);

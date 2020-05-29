@@ -1,3 +1,13 @@
+body {
+    background-color: black;
+    color: #eeeeee;
+}
+
+h1 {
+    padding-top: 20px;
+    font-family: 'Righteous';
+}
+
 #race {
     position: absolute;
     left: 5px;
@@ -5,7 +15,7 @@
 
 #data {
     position: absolute;
-    width: 600px;
+    width: 590px;
     height:700px;
     overflow: auto;
     right: 20px;
@@ -16,11 +26,11 @@
 }
 
 #lapName, #mapName {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Archivo', sans-serif;
 }
 
 table {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Archivo', sans-serif;
     border-collapse: collapse;
     width: 100%;
   }
@@ -29,14 +39,16 @@ td, th {
     text-align: left;
     padding: 4px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
 }
 
 th {
-    background-color: #d1c4e9;
+    background-color: #880e4f;
 }
   
-tr:hover {background-color:#ede7f6;}
+tr:hover {
+    background-color:#ec407a;
+    color: black;
+}
 
   /* tr:nth-child(even) {
     background-color: #dddddd;
