@@ -29,7 +29,7 @@ var getAngle = (degree) => degree * (Math.PI/180);
 var marbels = getMarbels(bodyWidth, engine);
 
 // set number of Laps
-var totalLaps = 5;
+var totalLaps = 3;
 
 var fastestLap = ['', 0, Infinity];
 var lapData = new Array(totalLaps);
@@ -81,7 +81,7 @@ Events.on(engine, 'collisionStart', function(event) {
         if (pair.bodyA.label === 'Marble') {
             switch (pair.bodyB.label) {
                 case 'Teleport':
-                    Body.setPosition(pair.bodyA, {x: pair.bodyA.position.x+223, y:-5});
+                    Body.setPosition(pair.bodyA, {x: pair.bodyA.position.x+223, y:-10});
                     break;
                 case 'End':
                     endLogic(pair.bodyA, totalLaps);
